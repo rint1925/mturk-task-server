@@ -1,0 +1,86 @@
+body{
+    font-family: sans-serif;
+}
+
+
+img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+label {
+    display: inline-block;
+    background-color: rgb(160, 160, 160);
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 245px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+label:hover {
+    opacity:0.8;
+}
+
+
+.content {
+    width: 600px;
+    margin: 50 auto 50 auto;
+    text-align: center;
+}
+
+
+.submit-btn-area{
+    width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+
+.radio-button {
+    display: none;
+}
+
+
+.radio-button:checked + #yes-label {
+    background-color: #FF5656;
+}
+
+
+.radio-button:checked + #no-label {
+    background-color: #2D81FF;
+}
+
+
+#discription-text {
+    margin: 20px auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+
+#submitButton {
+    text-align: center;
+    width: 105px;
+    height: 35px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto 55px auto auto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 197, 197);
+}
+
+
+#submitButton:enabled {
+    background-color: #EC7221;
+}
+
+
+#submitButton:enabled#submitButton:hover {
+    opacity:0.8;
+}

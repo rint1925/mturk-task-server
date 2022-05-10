@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="./funcs.js"></script>
+  </head>
+
+
+  <body>
+
+    <script>
+      const inputStr = window.location.href
+      const url = new URL(inputStr);
+      const query = url.searchParams;
+      var params = {
+        assignmentId : query.get("assignmentId"),
+        hitId : query.get("hitId"),
+        workerId : query.get("workerId"),
+        turkSubmitTo : query.get("turkSubmitTo")
+      }
+    </script>
+
+    <div class="content">
+      <img src="./images/shoplifting_positive.gif">
+      <div id="discription-text">Is someone shoplifting in this video?</div>
+      <div>
+        <input id="yes" class="radio-button" name="ans" type="radio" value="YES" onclick="enableSubmit()"/>
+        <label id="yes-label" for="yes">YES</label>
+        <input id="no" class="radio-button" name="ans" type="radio" value="NO" onclick="enableSubmit()"/>
+        <label id="no-label" for="no">NO</label>
+      </div>     
+    </div>
+
+    <div class="submit-btn-area">
+      <button id="submitButton" disabled="true" onclick="submit(params)"/>Submit</button>
+    </div>
+
+  </body>
+</html>
