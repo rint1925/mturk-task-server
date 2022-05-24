@@ -1,6 +1,6 @@
 # mturk-task-server
 
-![回答画面](https://i.imgur.com/5xgY4T0.gif)
+![回答画面](https://raw.githubusercontent.com/wiki/rint1925/mturk-task-server/imgs/ansering.gif)
 
 
 ## 概要
